@@ -1,6 +1,6 @@
 describe('portfolio test', () => {
   beforeEach(()=>{
-    cy.visit('https://nicolas-martins.mds-caen.yt/')
+    cy.visit('/')
   })
 
   it.skip('have active class', () => {
@@ -26,7 +26,7 @@ describe('portfolio test', () => {
     cy.url().should('include', 'Contact')
 
     cy.contains('Accueil').click()
-    cy.url().should('eq', 'https://nicolas-martins.mds-caen.yt/')
+    cy.url().should('eq', '/')
 
   })
 
@@ -49,17 +49,17 @@ describe('portfolio test', () => {
   it.skip('test links in footer that redirect to other site', () => {
 
     
-    cy.url().should('include','https://nicolas-martins.mds-caen.yt/')
+    cy.url().should('include','/')
     cy.contains('Github').click()
     cy.url().should('include', 'github')
     
-    cy.visit('https://nicolas-martins.mds-caen.yt/')
+    cy.visit('/')
 
-    cy.url().should('include','https://nicolas-martins.mds-caen.yt/')
+    cy.url().should('include','/')
       cy.contains('Linkedin').click()
       cy.url().should('include', 'linkedin')
     
-    cy.visit('https://nicolas-martins.mds-caen.yt/')
+    cy.visit('/')
   
   })
   
@@ -74,7 +74,7 @@ describe('portfolio test', () => {
 
   it('test contact form', () => {
 
-    cy.visit('https://nicolas-martins.mds-caen.yt/Contact')
+    cy.visit('/Contact')
 
 
 
@@ -118,7 +118,7 @@ describe('portfolio test', () => {
   it.skip('test fail', () => {
     
 
-      if (cy.url().should('include','https://nicolas-martins.mds-caen.yt/Contact')) {
+      if (cy.url().should('include','/Contact')) {
       return
     }
         cy.contains('Contact').click()
