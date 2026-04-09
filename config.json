@@ -1,0 +1,7 @@
+{
+    "base_url": "https://nicolas-martins.mds-caen.yt",
+    "base_folder":"",
+    "components_folder":"Views/components/",
+    "controllers_folder":"Controllers/"
+
+}
