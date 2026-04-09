@@ -3,7 +3,7 @@ describe('portfolio test', () => {
     cy.visit('/')
   })
 
-  it.skip('have active class', () => {
+  it('have active class', () => {
     
     cy.get('.active').should('not.be.visible')
 
@@ -11,7 +11,7 @@ describe('portfolio test', () => {
   })
 
 
-  it.skip('test links in header', () => {
+  it('test links in header', () => {
     
     cy.contains('Profil').click()
     cy.url().should('include', 'Profil')
@@ -30,7 +30,7 @@ describe('portfolio test', () => {
 
   })
 
-    it.skip('test links in footer', () => {
+    it('test links in footer', () => {
     
     cy.contains('Profil').click()
     cy.url().should('include', 'Profil')
@@ -46,7 +46,7 @@ describe('portfolio test', () => {
   })
 
   
-  it.skip('test links in footer that redirect to other site', () => {
+  it('test links in footer that redirect to other site', () => {
 
     
     cy.url().should('include','/')
@@ -64,7 +64,7 @@ describe('portfolio test', () => {
   })
   
 
-  it.skip('test download button', () => {
+  it('test download button', () => {
     
     cy.contains('Télécharger mon CV').click()
     cy.readFile(Cypress.config("downloadsFolder")+"\\CV_Nicolas_Martins.pdf").should("exist")
@@ -115,7 +115,7 @@ describe('portfolio test', () => {
   })
 
 
-  it.skip('test fail', () => {
+  it('test fail', () => {
     
 
       if (cy.url().should('include','/Contact')) {
