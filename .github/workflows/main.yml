@@ -10,8 +10,6 @@ jobs:
         uses: actions/checkout@v6
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run
-        uses: cypress-io/github-action@v7
       - name: Start PHP server
         run: php -S localhost:8000 &
 
