@@ -14,16 +14,16 @@ describe('portfolio test', () => {
   it('test links in header', () => {
     
     cy.contains('Profil').click()
-    cy.url().should('include', 'Profil')
+    cy.url().should('include', '/Profil')
 
     cy.contains('Projets').click()
-    cy.url().should('include', 'Projets')
+    cy.url().should('include', '/Projets')
 
     cy.contains('Compétences').click()
-    cy.url().should('include', 'Competences')
+    cy.url().should('include', '/Competences')
 
     cy.contains('Contact').click()
-    cy.url().should('include', 'Contact')
+    cy.url().should('include', '/Contact')
 
     cy.contains('Accueil').click()
     cy.url().should('eq', '/')
