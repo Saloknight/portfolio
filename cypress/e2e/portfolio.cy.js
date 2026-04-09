@@ -26,7 +26,7 @@ describe('portfolio test', () => {
     cy.url().should('include', '/Contact')
 
     cy.contains('Accueil').click()
-    cy.url().should('eq', Cypress.config().baseUrl() + '/')
+    cy.url().should('eq', Cypress.config('baseUrl') + '/')
 
   })
 
