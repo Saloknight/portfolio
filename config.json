@@ -1,5 +1,5 @@
 {
-    "base_url": "https://nicolas-martins.mds-caen.yt",
+    "base_url": "http://localhost:8000",
     "base_folder":"",
     "components_folder":"Views/components/",
     "controllers_folder":"Controllers/"
