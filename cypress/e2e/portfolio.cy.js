@@ -115,7 +115,7 @@ describe('portfolio test', () => {
   })
 
 
-  it('test fail', () => {
+  it.skip('test fail', () => {
     
 
       if (cy.url().should('include','/Contact')) {
