@@ -67,7 +67,7 @@ describe('portfolio test', () => {
   it('test download button', () => {
     
     cy.contains('Télécharger mon CV').click()
-    cy.readFile(Cypress.config("downloadsFolder")+"\\CV_Nicolas_Martins.pdf").should("exist")
+    cy.readFile(Cypress.config("downloadsFolder")+"/CV_Nicolas_Martins.pdf").should("exist")
     
   })
 
